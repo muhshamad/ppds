@@ -1,0 +1,2278 @@
+﻿[Dictionary]
+Version=CSPro 6.0
+Label=VSEN2013.K
+Name=KOR2013
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Level 1
+Name=LEVEL_1
+
+[IdItems]
+
+[Item]
+Label=Provinsi
+Name=B1R1
+Start=2
+Len=2
+
+[Item]
+Label=Kabupaten/Kota
+Name=B1R2
+Start=4
+Len=2
+
+[Item]
+Label=Kecamatan
+Name=B1R3
+Start=6
+Len=3
+
+[Item]
+Label=Desa/Kelurahan
+Name=B1R4
+Start=9
+Len=3
+
+[Item]
+Label=Klasifikasi desa/kelurahan
+Name=B1R5
+Start=12
+Len=1
+
+[ValueSet]
+Label=Klasifikasi desa/kelurahan
+Name=B1R5_VS1
+Value=1;Perkotaan
+Value=2;Perdesaan
+
+[Item]
+Label=Nomor kode sampel
+Name=B1R7
+Start=13
+Len=5
+
+[Item]
+Label=Nomor urut rumah tangga sampel
+Name=B1R8
+Start=18
+Len=2
+
+[Record]
+Label=KETERANGAN TEMPAT
+Name=SEC1
+RecordTypeValue='1'
+RecordLen=189
+
+[Item]
+Label=Nama kepala rumah tangga
+Name=B1R9
+Start=20
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Alamat (nama jalan/gang, RT/RW/dusun)
+Name=B1R10
+Start=70
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Hasil kunjungan
+Name=B1R11
+Start=120
+Len=1
+
+[ValueSet]
+Label=Hasil kunjungan
+Name=B1R11_VS1
+Value=1;Berhasil
+Value=2;Menolak
+Value=3;Tidak dapat ditemui
+
+[Item]
+Label=Banyaknya anggota rumah tangga
+Name=B2R1
+Start=121
+Len=2
+
+[Item]
+Label=Banyaknya anggota rumah tangga umur 0 - 4 tahun
+Name=B2R2
+Start=123
+Len=1
+
+[Item]
+Label=Banyaknya anggota rumah tangga umur 5 tahun ke atas
+Name=B2R3
+Start=124
+Len=2
+
+[Item]
+Label=Banyaknya anggota rumah tangga umur 10 tahun ke atas
+Name=B2R4
+Start=126
+Len=2
+
+[Item]
+Label=Banyaknya anggota rumah tangga umur 10 tahun ke atas yang bekerja 10 bulan terakhir
+Name=B2R5
+Start=128
+Len=2
+
+[Item]
+Label=Nama
+Name=B3R1
+Start=130
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Kode Petugas
+Name=B3R2
+Start=180
+Len=5
+
+[Item]
+Label=Jabatan
+Name=B3R3
+Start=185
+Len=1
+
+[ValueSet]
+Label=Jabatan
+Name=B3R3_VS1
+Value=1;Staf BPS Provinsi
+Value=2;Staf BPS Kab/Kota
+Value=3;KSK
+Value=4;Mitra
+
+[Item]
+Label=Tanggal
+Name=B3R4
+Start=186
+Len=4
+
+[Item]
+Label=Tanggal
+Name=B1R4A
+Start=186
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Bulan
+Name=B1R4B
+Start=188
+Len=2
+ItemType=SubItem
+
+[Record]
+Label=KETERANGAN ANGGOTA RUMAH TANGGA
+Name=SEC2
+RecordTypeValue='2'
+MaxRecords=30
+RecordLen=90
+
+[Item]
+Label=Nomor urut
+Name=B4AR0
+Start=20
+Len=2
+
+[Item]
+Label=Nama anggota rumah tangga
+Name=B4AR1
+Start=22
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Hubungan dengan kepala rumah tangga
+Name=B4AR2
+Start=72
+Len=1
+
+[ValueSet]
+Label=Hubungan dengan kepala rumah tangga
+Name=B4AR2_VS1
+Value=1;Kepala ruta
+Value=2;Istri/suami
+Value=3;Anak
+Value=4;Menantu
+Value=5;Cucu
+Value=6;Orang tua/mertua
+Value=7;Famili lain
+Value=8;Pembantu rt
+Value=9;Lainnya
+
+[Item]
+Label=Jenis kelamin
+Name=B4AR3
+Start=73
+Len=1
+
+[ValueSet]
+Label=Jenis kelamin
+Name=B4AR3_VS1
+Value=1;Laki-laki
+Name=NOTAPPL,Special
+
+[Item]
+Label=Umur
+Name=B4AR4
+Start=74
+Len=2
+
+[Item]
+Label=Status perkawinan
+Name=B4AR5
+Start=76
+Len=1
+
+[ValueSet]
+Label=Status perkawinan
+Name=B4AR5_VS1
+Value=1;Belum kawin
+Value=3;Cerai hidup
+Value=4;Cerai mati
+Value=2;Kawin
+Name=NOTAPPL,Special
+
+[Item]
+Label=Apakah menjadi korban kejahatan dalam setahun terakhir?
+Name=B4AR6
+Start=77
+Len=1
+
+[ValueSet]
+Label=Apakah menjadi korban kejahatan dalam setahun terakhir?
+Name=B4AR6_VS1
+Value=1;Ya, Pencurian
+Value=2;Ya, Perampokan
+Value=3;Ya, Pembunuhan
+Value=5;Ya, Perkosaan
+Value=6;Ya, Lainnya
+Value=7;Tidak
+Value=4;Ya, Penipuan
+Name=NOTAPPL,Special
+
+[Item]
+Label=Apakah dilaporkan ke Polisi?
+Name=B4AR7
+Start=78
+Len=1
+
+[Item]
+Label=Berapa kali bepergian selama 3 bulan kalender?
+Name=B4AR8
+Start=79
+Len=2
+
+[Item]
+Label=Tujuan utama bepergian yang terakhir
+Name=B4AR9
+Start=81
+Len=1
+
+[ValueSet]
+Label=Tujuan utama bepergian yang terakhir
+Name=B4AR9_VS1
+Value=1;Berlibur/rekreasi
+Value=2;Profesi/bisnis
+Value=3;Misi/pertemuan/kongres
+Value=4;Pendidikan/pelatihan
+Value=5;Kesehatan
+Value=6;Berziarah/keagamaan
+Value=7;Mengunjungi teman/keluarga
+Value=8;Olahraga/kesenian
+Value=9;Lainnya
+
+[Item]
+Label=Provinsi tujuan utama pada bepergian yang terakhir
+Name=B4AR10
+Start=82
+Len=2
+
+[ValueSet]
+Label=Provinsi tujuan utama pada bepergian yang terakhir
+Name=B4AR10_VS1
+Value=11;Aceh
+Value=12;Sumatera Utara
+Value=13;Sumatera Barat
+Value=14;Riau
+Value=15;Jambi
+Value=16;Sumatera Selatan
+Value=17;Bengkulu
+Value=18;Lampung
+Value=19;Bangka Belitung
+Value=21;Kepulauan Riau
+Value=31;DKI Jakarta
+Value=32;Jawa Barat
+Value=33;Jawa Tengah
+Value=34;DI Yogyakarta
+Value=35;Jawa Timur
+Value=36;Banten
+Value=51;Bali
+Value=52;NTB
+Value=53;NTT
+Value=61;Kalimantan Barat
+Value=62;Kalimantan Tengah
+Value=63;Kalimantan Selatan
+Value=64;Kalimantan Timur
+Value=71;Sulawesi Utara
+Value=72;Sulawesi Tengah
+Value=73;Sulawesi Selatan
+Value=74;Sulawesi Tenggara
+Value=75;Gorontalo
+Value=76;Sulawesi Barat
+Value=81;Maluku
+Value=82;Maluku Utara
+Value=91;Papua Barat
+Value=94;Papua
+
+[Item]
+Label=Apakah mempunyai akte kelahiran dari kantor catatan sipil?
+Name=B4AR11
+Start=84
+Len=1
+
+[ValueSet]
+Label=Apakah mempunyai akte kelahiran dari kantor catatan sipil?
+Name=B4AR11_VS1
+Value=2;Ya, tidak dapat ditunjukkan
+Value=3;Tidak punya
+Value=4;Tidak tahu
+Value=1;Ya, dapat ditunjukkan
+Name=NOTAPPL,Special
+
+[Item]
+Label=Apa alasan utamanya?
+Name=B4AR12
+Start=85
+Len=1
+
+[ValueSet]
+Label=Apa alasan utamanya?
+Name=B4AR12_VS1
+Value=1;Biaya mahal/tidak ada biaya
+Value=2;Perjalanan jauh
+Value=4;Tidak tahu cara mengurusnya
+Value=5;Tidak merasa perlu
+Value=6;Lainnya
+Value=3;Tidak tahu kelahiran harus dicatat
+Name=NOTAPPL,Special
+
+[Item]
+Label=Apakah pernah mengikuti pendidikan pra sekolah?
+Name=B4AR13
+Start=86
+Len=1
+
+[Item]
+Label=Jenis pendidikan pra sekolah
+Name=B4AR14
+Start=87
+Len=1
+
+[ValueSet]
+Label=Jenis pendidikan pra sekolah
+Name=B4AR14_VS1
+Value=1;TK/BA/RA
+Value=2;Kelompok Bermain
+Value=3;Taman Penitipan Anak
+Value=4;Pos PAUD/PAUD terintegrasi BKB/Posyandu
+Value=5;Satuan PAUD sejenis lainnya
+
+[Item]
+Label=Apakah pernah mengikuti pendidikan pra sekolah dalam 3 bulan terakhir?
+Name=B4AR15
+Start=88
+Len=1
+
+[Item]
+Label=Sarana angkutan yang biasa digunakan untuk sekolah?
+Name=B4AR16
+Start=89
+Len=2
+
+[ValueSet]
+Label=Sarana angkutan yang biasa digunakan untuk sekolah?
+Name=B4AR16_VS1
+Value=1;Tanpa kendaraan
+Value=2;Sepeda
+Value=3;Sepeda motor pribadi
+Value=4;Becak/dokar
+Value=5;Kendaraan umum dg rute tertentu
+Value=6;Kendaraan umum bermotor lainnya
+Value=7;Mobil pribadi
+Value=8;Sepeda motor dinas
+Value=9;Mobil dinas
+Value=10;Lainnya
+
+[Record]
+Label=KETERANGAN PEKERJA
+Name=SEC3
+RecordTypeValue='3'
+RecordLen=28
+
+[Item]
+Label=Adakah Pembantu/Satpam/Sopir yang mendapat makan tetapi tidak menginap?
+Name=B4BR1
+Start=20
+Len=1
+
+[Item]
+Label=Jika ada isikan jumlahnya
+Name=B4BR2
+Start=21
+Len=4
+
+[Item]
+Label=Pembantu
+Name=B4BR2A
+Start=25
+Len=1
+
+[Item]
+Label=Satpam
+Name=B4BR2B
+Start=26
+Len=1
+
+[Item]
+Label=Sopir
+Name=B4BR2C
+Start=27
+Len=1
+
+[Item]
+Label=Lainnya
+Name=B4BR2D
+Start=28
+Len=1
+
+[Record]
+Label=KETERANGAN PERORANGAN TENTANG KESEHATAN, PENDIDIKAN, KETENAGAKERJAAN, SERTA FERTILITAS DAN KB
+Name=SEC4
+RecordTypeValue='4'
+RecordLen=133
+
+[Item]
+Label=Nama
+Name=B5R1A
+Start=20
+Len=50
+DataType=Alpha
+
+[Item]
+Label=No. Urut
+Name=B5R1B
+Start=70
+Len=2
+
+[Item]
+Label=Tempat lahir
+Name=B5R2
+Start=72
+Len=4
+
+[Item]
+Label=Provinsi/negara*)
+Name=B5R2A
+Start=72
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Kabupaten/kota*)
+Name=B5R2B
+Start=73
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Tempat tinggal 5 tahun yang lalu
+Name=B5R3
+Start=76
+Len=4
+
+[Item]
+Label=Provinsi/negara*)
+Name=B5R3A
+Start=76
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Kabupaten/kota*)
+Name=B5R3B
+Start=77
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=No. urut ibu kandung
+Name=B5R4
+Start=80
+Len=2
+
+[Item]
+Label=Pemberi informasi : Nama
+Name=B5R5A
+Start=82
+Len=50
+DataType=Alpha
+
+[Item]
+Label=No. Urut
+Name=B5R5B
+Start=132
+Len=2
+
+[Record]
+Label=KETERANGAN KESEHATAN (UNTUK SEMUA UMUR)
+Name=SEC5
+RecordTypeValue='5'
+RecordLen=66
+
+[Item]
+Label=Apakah dalam 1 bulan terakhir mempunyai keluhan kesehatan seperti di bawah ini? (Bacakan dari a s.d. h) [Isikan kode 1 bila ada, kode 2 bila tidak ada]
+Name=B5AR1
+Start=20
+Len=8
+
+[Item]
+Label=Panas
+Name=B5AR1A
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Batuk
+Name=B5AR1B
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Pilek
+Name=B5AR1C
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Asma/napas sesak/cepat
+Name=B5AR1D
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Diare/buang-buang air
+Name=B5AR1E
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Sakit kepala berulang
+Name=B5AR1F
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Sakit gigi
+Name=B5AR1G
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lainnya**)
+Name=B5AR1H
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Kalau ada keluhan, apakah menyebabkan terganggunya pekerjaan, sekolah, atau kegiatan sehari-hari?
+Name=B5AR2
+Start=28
+Len=1
+
+[Item]
+Label=Lamanya terganggu
+Name=B5AR3
+Start=29
+Len=1
+
+[Item]
+Label=Apakah pernah mengobati sendiri dalam 1 bulan terakhir?
+Name=B5AR4A
+Start=30
+Len=1
+
+[Item]
+Label=Jenis obat/cara pengobatan yang digunakan:
+Name=B5AR4B
+Start=31
+Len=3
+
+[Item]
+Label=Tradisional
+Name=B5AR4BA
+Start=31
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Modern
+Name=B5AR4BB
+Start=32
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lainnya
+Name=B5AR4BC
+Start=33
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah pernah berobat jalan dlm 1 bulan terakhir?
+Name=B5AR5
+Start=34
+Len=1
+
+[Item]
+Label=Berapa kali berobat jalan selama 1 bulan terakhir: [Isikan frekuensi berobat jalan untuk setiap fasilitas]
+Name=B5AR6
+Start=35
+Len=15
+
+[Item]
+Label=RS Pemerintah
+Name=B5AR6A
+Start=35
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=RS Swasta
+Name=B5AR6B
+Start=37
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Praktek dokter/poliklinik
+Name=B5AR6C
+Start=39
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Puskesmas/Pustu
+Name=B5AR6D
+Start=41
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Praktek nakes
+Name=B5AR6E
+Start=43
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Praktek batra
+Name=B5AR6F
+Start=45
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Dukun bersalin
+Name=B5AR6G
+Start=47
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Lainnya
+Name=B5AR6H
+Start=49
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah pernah berobat jalan dlm 6 bulan terakhir?
+Name=B5AR7
+Start=50
+Len=1
+
+[Item]
+Label=Apakah pernah rawat inap dalam 1 tahun terakhir?
+Name=B5AR8
+Start=51
+Len=1
+
+[Item]
+Label=Lamanya hari rawat inap (dalam hari):
+Name=B5AR9
+Start=52
+Len=15
+
+[Item]
+Label=RS Pemerintah
+Name=B5AR9A
+Start=52
+Len=3
+ItemType=SubItem
+
+[Item]
+Label=RS Swasta
+Name=B5AR9B
+Start=55
+Len=3
+ItemType=SubItem
+
+[Item]
+Label=Puskesmas
+Name=B5AR9C
+Start=58
+Len=3
+ItemType=SubItem
+
+[Item]
+Label=Praktek nakes
+Name=B5AR9D
+Start=60
+Len=3
+ItemType=SubItem
+
+[Item]
+Label=Praktek batra
+Name=B5AR9E
+Start=62
+Len=3
+ItemType=SubItem
+
+[Item]
+Label=Lainnya
+Name=B5AR9F
+Start=64
+Len=1
+ItemType=SubItem
+
+[Record]
+Label=KESEHATAN BALITA (UNTUK ANGGOTA RUTA UMUR 0-59 BULAN)
+Name=SEC6
+RecordTypeValue='6'
+RecordLen=37
+
+[Item]
+Label=Umur dalam bulan:
+Name=B5BR10A
+Start=20
+Len=2
+
+[Item]
+Label=Umur dalam hari:
+Name=B5BR10B
+Start=22
+Len=2
+
+[Item]
+Label=Siapa yang menolong proses kelahiran?
+Name=B5BR11
+Start=24
+Len=2
+
+[Item]
+Label=Pertama
+Name=B5BR11A
+Start=24
+Len=1
+ItemType=SubItem
+
+[ValueSet]
+Label=Pertama
+Name=B5BR11A_VS1
+Value=1;Dokter
+Value=2;Bidan
+Value=3;Tenaga paramedis lain
+Value=4;Dukun bersalin
+Value=5;Famili/keluarga
+Value=6;Lainnya
+
+[Item]
+Label=Terakhir
+Name=B5BR11B
+Start=25
+Len=1
+ItemType=SubItem
+
+[ValueSet]
+Label=Terakhir
+Name=B5BR11B_VS1
+Value=1;Dokter
+Value=2;Bidan
+Value=3;Tenaga paramedis lain
+Value=4;Dukun bersalin
+Value=5;Famili/keluarga
+Value=6;Lainnya
+
+[Item]
+Label=Berapa kali sudah mendapat imunisasi?
+Name=B5BR12
+Start=26
+Len=5
+
+[Item]
+Label=BCG
+Name=B5BR12A
+Start=26
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=DPT
+Name=B5BR12B
+Start=27
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Polio
+Name=B5BR12C
+Start=28
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Campak/Morbili
+Name=B5BR12D
+Start=29
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Hepatitis B
+Name=B5BR12E
+Start=30
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah pernah diberi Air Susu Ibu (ASI)?
+Name=B5BR13A
+Start=31
+Len=1
+
+[Item]
+Label=Lama pemberian ASI: [Isikan dalam ”hari” bila umur < 1 bulan dan dalam ”bulan” bila umur ≥ 1 bulan]:
+Name=B5BR13B
+Start=32
+Len=6
+
+[Item]
+Label=Lama pemberian ASI:
+Name=B5BR13BA
+Start=32
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=ASI saja:
+Name=B5BR13BB
+Start=34
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=ASI dengan makanan pendamping:
+Name=B5BR13BC
+Start=36
+Len=2
+ItemType=SubItem
+
+[Record]
+Label=KETERANGAN PENDIDIKAN (UNTUK ANGGOTA RUTA 5 TAHUN KE ATAS)
+Name=SEC7
+RecordTypeValue='7'
+RecordLen=38
+
+[Item]
+Label=Partisipasi bersekolah:
+Name=B5CR14
+Start=20
+Len=1
+
+[ValueSet]
+Label=Partisipasi bersekolah:
+Name=B5CR14_VS1
+Value=1;Tidak/belum pernah bersekolah
+Value=2;Masih bersekolah
+Value=3;Tidak bersekolah lagi
+
+[Item]
+Label=Jenjang dan jenis pendidikan tertinggi yang pernah/sedang diduduki:
+Name=B5CR15
+Start=21
+Len=2
+
+[ValueSet]
+Label=Jenjang dan jenis pendidikan tertinggi yang pernah/sedang diduduki:
+Name=B5CR15_VS1
+Value=1;SD/SDLB
+Value=2;M. Ibtiidaiyah
+Value=3;Paket A
+Value=4;SMP/SMPLB
+Value=5;M. Tsanawiyah
+Value=6;Paket B
+Value=7;SMA/SMLB
+Value=8;M. Aliyah
+Value=9;SMK
+Value=10;Paket C
+Value=11;D1/D2
+Value=12;D3/Sarjana Muda
+Value=13;D4/S1
+Value=14;S2/S3
+
+[Item]
+Label=Tingkat/kelas tertinggi yang pernah/sedang diduduki:
+Name=B5CR16
+Start=23
+Len=1
+
+[ValueSet]
+Label=Tingkat/kelas tertinggi yang pernah/sedang diduduki:
+Name=B5CR16_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8 (Tamat)
+
+[Item]
+Label=Ijazah/STTB tertinggi yang dimiliki:
+Name=B5CR17
+Start=24
+Len=2
+
+[ValueSet]
+Label=Ijazah/STTB tertinggi yang dimiliki:
+Name=B5CR17_VS1
+Value=1;Tidak punya ijazah SD
+Value=2;SD/SDLB
+Value=3;M. Ibtiidaiyah
+Value=4;Paket A
+Value=5;SMP/SMPLB
+Value=6;M. Tsanawiyah
+Value=7;Paket B
+Value=8;SMA/SMLB
+Value=9;M. Aliyah
+Value=10;SMK
+Value=11;Paket C
+Value=12;D1/D2
+Value=13;D3/Sarjana Muda
+Value=14;D4/S1
+Value=15;S2/S3
+
+[Item]
+Label=Mengikuti pendidikan dalam 3 bulan terakhir?
+Name=B5CR18A
+Start=26
+Len=1
+
+[Item]
+Label=Apa sarana angkutan yang biasa digunakan untuk sekolah?
+Name=B5CR18B
+Start=27
+Len=2
+
+[ValueSet]
+Label=Apa sarana angkutan yang biasa digunakan untuk sekolah?
+Name=B5CR18B_VS1
+Value=1;Tanpa kendaraan
+Value=2;Sepeda
+Value=3;Sepeda motor pribadi
+Value=4;Beca/dokar
+Value=5;Kendaraan umum dg rute tertentu
+Value=6;Kendaraan bermotor umum lainnya
+Value=7;Mobil pribadi
+Value=8;Sepeda motor dinas
+Value=9;Mobil dinas
+Value=10;Lainnya
+
+[Item]
+Label=Dapat membaca dan menulis:
+Name=B5CR19
+Start=29
+Len=3
+
+[Item]
+Label=Huruf Latin
+Name=B5CR19A
+Start=29
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Huruf Arab
+Name=B5CR19B
+Start=30
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Huruf lainnya
+Name=B5CR19C
+Start=31
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah pernah mengakses internet dalam 3 bulan terakhir?
+Name=B5CR20
+Start=32
+Len=1
+
+[Item]
+Label=Lokasi/media untuk mengakses internet
+Name=B5CR21
+Start=33
+Len=6
+
+[Item]
+Label=Rumah sendiri
+Name=B5CR21A
+Start=33
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Warnet
+Name=B5CR21B
+Start=34
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Kantor
+Name=B5CR21C
+Start=35
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Sekolah
+Name=B5CR21D
+Start=36
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=HP/Ponsel
+Name=B5CR21E
+Start=37
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lainnya
+Name=B5CR21F
+Start=38
+Len=1
+ItemType=SubItem
+
+[Record]
+Label=UNTUK ANGGOTA RUTA BERUMUR 5 – 24 TAHUN MASIH SEKOLAH [R.14 = 2]
+Name=SEC8
+RecordTypeValue='8'
+RecordLen=21
+
+[Item]
+Label=Apakah pernah tidak masuk sekolah selama 1 minggu berturut-turut atau lebih, dalam 3 bulan terakhir?
+Name=B5CR21G
+Start=20
+Len=1
+
+[Item]
+Label=Apa alasan utama tidak masuk sekolah saat itu?
+Name=B5CR21H
+Start=21
+Len=1
+
+[ValueSet]
+Label=Apa alasan utama tidak masuk sekolah saat itu?
+Name=B5CR21H_VS1
+Value=1;Sakit
+Value=2;Bekerja/membantu orang tua mencari uang/ penghasilan
+Value=3;Tidak punya biaya
+Value=4;Sekolah tutup/rusak
+Value=5;Tidak mau sekolah
+Value=6;Mengurus ruta
+Value=7;Lainnya
+
+[Record]
+Label=UNTUK ANGGOTA RUTA BERUMUR 5 – 24 TAHUN TIDAK/BELUM PERNAH SEKOLAH ATAU TIDAK BERSEKOLAH LAGI [R.14 = 1 atau 3]
+Name=SEC9
+RecordTypeValue='9'
+RecordLen=27
+
+[Item]
+Label=Alasan tidak/belum pernah bersekolah atau tidak bersekolah lagi:
+Name=B5CR22
+Start=20
+Len=2
+
+[ValueSet]
+Label=Alasan tidak/belum pernah bersekolah atau tidak bersekolah lagi:
+Name=B5CR22_VS1
+Value=1;Tidak ada biaya
+Value=2;Bekerja/mencari nafkah
+Value=3;Menikah/mengurus ruta
+Value=4;Merasa pendidikan cukup
+Value=5;Belum cukup umur
+Value=6;Malu karena ekonomi
+Value=7;Sekolah jauh
+Value=8;Cacat
+Value=9;Menunggu pengumuman
+Value=10;Tidak terima
+Value=11;Lainnya
+
+[Item]
+Label=Kapan berhenti bersekolah?
+Name=B5CR23
+Start=22
+Len=6
+
+[Item]
+Label=Bulan:
+Name=B5CR23A
+Start=22
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Tahun:
+Name=B5CR23B
+Start=24
+Len=4
+ItemType=SubItem
+
+[Record]
+Label=KETENAGAKERJAAN (UNTUK ANGGOTA RUTA BERUMUR 10 TAHUN KE ATAS)
+Name=SEC10
+RecordTypeValue='0'
+RecordLen=29
+
+[Item]
+Label=Apakah melakukan kegiatan seperti di bawah ini selama seminggu terakhir?
+Name=B5DR24A
+Start=20
+Len=4
+
+[Item]
+Label=Bekerja
+Name=B5DR24AA
+Start=20
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Sekolah
+Name=B5DR24AB
+Start=21
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Mengurus ruta
+Name=B5DR24AC
+Start=22
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lainnya selain kegiatan pribadi ***)
+Name=B5DR24AD
+Start=23
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Dari kegiatan 1 s.d. 4 di atas yg menyatakan “Ya”, kegiatan apakah yang menggunakan waktu terbanyak selama seminggu terakhir?
+Name=B5DR24B
+Start=24
+Len=1
+
+[ValueSet]
+Label=Dari kegiatan 1 s.d. 4 di atas yg menyatakan “Ya”, kegiatan apakah yang menggunakan waktu terbanyak selama seminggu terakhir?
+Name=B5DR24B_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+
+[Item]
+Label=Apakah mempunyai pekerjaan/usaha, tetapi sementara tidak bekerja selama seminggu terakhir?
+Name=B5DR25
+Start=25
+Len=1
+
+[Item]
+Label=Apakah sedang mencari pekerjaan atau mempersiapkan suatu usaha selama seminggu terakhir?
+Name=B5DR26
+Start=26
+Len=1
+
+[Item]
+Label=Apakah bekerja dalam 3 bulan terakhir?
+Name=B5DR27A
+Start=27
+Len=1
+
+[Item]
+Label=Sarana angkutan yang biasa digunakan untuk bekerja?
+Name=B5DR27B
+Start=28
+Len=2
+
+[ValueSet]
+Label=Sarana angkutan yang biasa digunakan untuk bekerja?
+Name=B5DR27B_VS1
+Value=1;Tanpa kendaraan
+Value=2;Sepeda
+Value=3;Sepeda motor pribadi
+Value=4;Becak/dokar
+Value=5;Kendaraan umum dengan rute tertentu
+Value=6;Kendaraan bermotor umum lainnya
+Value=7;Mobil pribadi
+Value=8;Sepeda motor dinas
+Value=9;Mobil dinas
+Value=10;Lainnya
+
+[Record]
+Label=HANYA UNTUK ANGGOTA RUTA YANG BEKERJA [R.24.a.1 = 1 atau R.25 = 1]
+Name=SEC11
+RecordTypeValue='A'
+RecordLen=33
+
+[Item]
+Label=Jumlah hari kerja selama seminggu terakhir:
+Name=B5DR28A
+Start=20
+Len=1
+
+[Item]
+Label=Jumlah jam kerja dari seluruh pekerjaan seminggu terakhir:
+Name=B5DR28B
+Start=21
+Len=2
+
+[Item]
+Label=Berapa pendapatan bersih (uang dan barang) yang biasanya diterima selama sebulan dari pekerjaan utama
+Name=B5DR29
+Start=23
+Len=8
+
+[Item]
+Label=Apa lapangan usaha atau bidang pekerjaan (utama) dari tempat pekerjaan (nama) selama seminggu terakhir?
+Name=B5DR30
+Start=31
+Len=2
+
+[Item]
+Label=Status/kedudukan dalam pekerjaan utama selama seminggu terakhir:
+Name=B5DR31
+Start=33
+Len=1
+
+[Record]
+Label=FERTILITAS & KELUARGA BERENCANA UNTUK WANITA BERUMUR 10 TAHUN KE ATAS, BERSTATUS KAWIN, CERAI HIDUP, ATAU CERAI MATI (Blok IV.A, Kolom 4 = 2, Kolom 5 ≥10, Kolom 6 = 2,3, atau 4)
+Name=SEC12
+RecordTypeValue='B'
+RecordLen=46
+
+[Item]
+Label=Umur pada saat perkawinan pertama:
+Name=B5ER32
+Start=20
+Len=2
+
+[Item]
+Label=Jumlah tahun dlm ikatan perkawinan:
+Name=B5ER33
+Start=22
+Len=2
+
+[Item]
+Label=Jumlah anak kandung (A.K.) yang dilahirkan:
+Name=B5ER34A
+Start=24
+Len=6
+
+[Item]
+Label=A.K. lahir hidup (Laki-laki)
+Name=B5ER34AA
+Start=24
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=A.K. lahir hidup (Perempuan)
+Name=B5ER34AB
+Start=26
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=A.K. lahir hidup (Laki-laki+Perempuan)
+Name=B5ER34AC
+Start=28
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Jumlah anak kandung (A.K.) yang dilahirkan:
+Name=B5ER34B
+Start=30
+Len=6
+
+[Item]
+Label=A.K. masih hidup (Laki-laki)
+Name=B5ER34BA
+Start=30
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=A.K. masih hidup (Perempuan)
+Name=B5ER34BB
+Start=32
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=A.K. masih hidup (Laki-laki+Perempuan)
+Name=B5ER34BC
+Start=34
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Jumlah anak kandung (A.K.) yang dilahirkan:
+Name=B5ER34C
+Start=36
+Len=6
+
+[Item]
+Label=A.K. sudah meninggal (Laki-laki)
+Name=B5ER34CA
+Start=36
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=A.K. sudah meninggal (Perempuan)
+Name=B5ER34CB
+Start=38
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=A.K. sudah meninggal (Laki-laki+Perempuan)
+Name=B5ER34CC
+Start=40
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Penggunaan/pemakaian alat/cara KB:
+Name=B5ER35
+Start=42
+Len=1
+
+[Item]
+Label=Alat/cara KB yang sedang digunakan/dipakai:
+Name=B5ER36
+Start=43
+Len=2
+
+[ValueSet]
+Label=Alat/cara KB yang sedang digunakan/dipakai:
+Name=B5ER36_VS1
+Value=1;MOW/tubektomi
+Value=2;MOP/vasektomi
+Value=3;AKDR/IUD/spiral
+Value=4;Suntikan KB
+Value=5;Susuk KB/norplan/implanon/alwalit
+Value=6;Pil KB
+Value=7;Kondom/karet KB
+Value=8;Intravag/tisue
+Value=9;Kondom wanita
+Value=10;Cara tradisional
+
+[Item]
+Label=Apakah (masih) ingin punya anak?
+Name=B5ER37
+Start=45
+Len=1
+
+[ValueSet]
+Label=Apakah (masih) ingin punya anak?
+Name=B5ER37_VS1
+Value=1;Ya, segera (< 2 tahun)
+Value=2;Ya, kemudian (>= 2 tahun)
+Value=3;Tidak
+
+[Item]
+Label=Alasan utama tidak ber-KB:
+Name=B3ER38
+Start=46
+Len=1
+
+[ValueSet]
+Label=Alasan utama tidak ber-KB:
+Name=B3ER38_VS1
+Value=1;Alasan fertilitas (mandul, menopause, puasa kumpul, tradisi, ingin punya anak)
+Value=2;Tidak setuju KB
+Value=3;Tidak tahu alat/cara KB
+Value=4;Takut efek samping alat/cara KB
+Value=5;Tidak tahu
+Value=6;Lainnya
+
+[Record]
+Label=KETERANGAN PERUMAHAN
+Name=SEC13
+RecordTypeValue='C'
+RecordLen=45
+
+[Item]
+Label=Bangunan sensus yang ditempati merupakan:
+Name=B6R1
+Start=20
+Len=1
+
+[ValueSet]
+Label=Bangunan sensus yang ditempati merupakan:
+Name=B6R1_VS1
+Value=1;Bangunan tempat tinggal
+Value=2;Bangunan campuran
+
+[Item]
+Label=Jumlah keluarga dalam bangunan sensus/rumah ini:
+Name=B6R2
+Start=21
+Len=1
+
+[Item]
+Label=Status penguasaan bangunan tempat tinggal yang ditempati:
+Name=B6R3
+Start=22
+Len=1
+
+[ValueSet]
+Label=Status penguasaan bangunan tempat tinggal yang ditempati:
+Name=B6R3_VS1
+Value=1;Milik sendiri
+Value=2;Kontrak
+Value=3;Sewa
+Value=4;Bebas sewa milik orang lain
+Value=5;Bebas sewa milik orang tua/sanak/saudara
+Value=6;Dinas
+Value=7;Lainnya
+
+[Item]
+Label=Status tanah tempat tinggal:
+Name=B6R4
+Start=23
+Len=1
+
+[ValueSet]
+Label=Status tanah tempat tinggal:
+Name=B6R4_VS1
+Value=1;Hak milik
+Value=2;Hak guna bangunan
+Value=3;Hak pakai
+Value=4;Lainnya
+
+[Item]
+Label=Jenis atap terluas:
+Name=B6R5
+Start=24
+Len=1
+
+[ValueSet]
+Label=Jenis atap terluas:
+Name=B6R5_VS1
+Value=1;Beton
+Value=2;Genteng
+Value=3;Sirap
+Value=4;Seng
+Value=5;Asbes
+Value=6;Ijuk/rumbia
+Value=7;Lainnya
+
+[Item]
+Label=Jenis dinding terluas:
+Name=B6R6
+Start=25
+Len=1
+
+[ValueSet]
+Label=Jenis dinding terluas:
+Name=B6R6_VS1
+Value=1;Tembok
+Value=2;Kayu
+Value=3;Bambu
+Value=4;Lainnya
+
+[Item]
+Label=Jenis lantai terluas:
+Name=B6R7
+Start=26
+Len=1
+
+[ValueSet]
+Label=Jenis lantai terluas:
+Name=B6R7_VS1
+Value=1;Marmer/keramik/granit
+Value=2;Tegel/teraso
+Value=3;Semen
+Value=4;Kayu
+Value=5;Tanah
+Value=6;Lainnya
+
+[Item]
+Label=Luas lantai:
+Name=B6R8
+Start=27
+Len=4
+
+[Item]
+Label=Sumber air minum utama:
+Name=B6R9A
+Start=31
+Len=2
+
+[ValueSet]
+Label=Sumber air minum utama:
+Name=B6R9A_VS1
+Value=1;Air kemaasan bermerk
+Value=2;Air isi ulang
+Value=3;Leding meteran
+Value=4;Leding eceran
+Value=5;Sumur bor/pompa
+Value=6;Sumur terlindung
+Value=7;Sumur tak terlindung
+Value=8;Mata air terlindung
+Value=9;Mata air tak terlindung
+Value=10;Air sungai
+Value=11;Air hujan
+Value=12;Lainnya
+
+[Item]
+Label=Jarak ke tempat penampungan limbah/kotoran/tinja terdekat:
+Name=B6R9B
+Start=33
+Len=1
+
+[ValueSet]
+Label=Jarak ke tempat penampungan limbah/kotoran/tinja terdekat:
+Name=B6R9B_VS1
+Value=1;<10 m
+Value=2;>= 10 m
+Value=3;Tidak tahu
+
+[Item]
+Label=Penggunaan fasilitas air minum:
+Name=B6R10
+Start=34
+Len=1
+
+[ValueSet]
+Label=Penggunaan fasilitas air minum:
+Name=B6R10_VS1
+Value=1;Sendiri
+Value=2;Bersama
+Value=3;Umum
+Value=4;Tidak ada
+
+[Item]
+Label=Cara memperoleh air minum:
+Name=B6R11
+Start=35
+Len=1
+
+[ValueSet]
+Label=Cara memperoleh air minum:
+Name=B6R11_VS1
+Value=1;Membeli
+Value=2;Langganan
+Value=3;Tidak membeli
+
+[Item]
+Label=Sumber air untuk memasak:
+Name=B6R11A
+Start=36
+Len=2
+
+[ValueSet]
+Label=Sumber air untuk memasak:
+Name=B6R11A_VS1
+Value=1;Air kemasan bermerk
+Value=2;Air isi ulang
+Value=3;Leding meteran
+Value=4;Leding eceran
+Value=5;Sumur bor/pompa
+Value=6;Sumur terlindung
+Value=7;Sumur tak terindung
+Value=8;Mata air terlindung
+Value=9;Mata air tak terlindung
+Value=10;Air sungai
+Value=11;Air hujan
+Value=12;Lainnya
+Value=13;Tidak pernah memasak
+
+[Item]
+Label=Sumber air untuk mandi/cuci:
+Name=B6R12
+Start=38
+Len=2
+
+[ValueSet]
+Label=Sumber air untuk mandi/cuci:
+Name=B6R12_VS1
+Value=1;Leding meteran
+Value=2;Leding eceran
+Value=3;Sumur bor/pompa
+Value=4;Sumur terlindung
+Value=5;Sumur tak terindung
+Value=6;Mata air terlindung
+Value=7;Mata air tak terlindung
+Value=8;Air sungai
+Value=9;Air hujan
+Value=10;Lainnya
+
+[Item]
+Label=Penggunaan fasilitas tempat buang air besar:
+Name=B6R13A
+Start=40
+Len=1
+
+[ValueSet]
+Label=Penggunaan fasilitas tempat buang air besar:
+Name=B6R13A_VS1
+Value=1;Sendiri
+Value=2;Bersama
+Value=3;Umum
+Value=4;Tidak ada
+
+[Item]
+Label=Jenis kloset:
+Name=B6R13B
+Start=41
+Len=1
+
+[ValueSet]
+Label=Jenis kloset:
+Name=B6R13B_VS1
+Value=1;Leher angsa
+Value=2;Plengsengan
+Value=3;Cemplung/cubluk
+Value=4;Tidak pakai
+
+[Item]
+Label=Tempat pembuangan akhir tinja:
+Name=B6R13C
+Start=42
+Len=1
+
+[ValueSet]
+Label=Tempat pembuangan akhir tinja:
+Name=B6R13C_VS1
+Value=1;Tangki/SPAL
+Value=2;Kolam/sawah
+Value=3;Sungai/danau/laut
+Value=4;Lubang tanah
+Value=5;Pantai/tanah lapang/kebun
+Value=6;Lainnya
+
+[Item]
+Label=Sumber penerangan:
+Name=B6R14A
+Start=43
+Len=1
+
+[ValueSet]
+Label=Sumber penerangan:
+Name=B6R14A_VS1
+Value=1;Listrik PLN
+Value=2;Listrik non PLN
+Value=3;Petromak/aladin
+Value=4;Pelita/sentir/obor
+Value=5;Lainnya
+
+[Item]
+Label=Daya terpasang:
+Name=B6R14B
+Start=44
+Len=1
+
+[ValueSet]
+Label=Daya terpasang:
+Name=B6R14B_VS1
+Value=1;450 watt
+Value=2;900 watt
+Value=3;1.300 watt
+Value=4;2.200 watt
+Value=5;> 2.200 watt
+Value=6;Tanpa meteran
+
+[Item]
+Label=Bahan bakar/energi utama untuk memasak:
+Name=B6R15
+Start=45
+Len=1
+
+[ValueSet]
+Label=Bahan bakar/energi utama untuk memasak:
+Name=B6R15_VS1
+Value=1;Listrik
+Value=2;Gas/elpiji
+Value=3;Gas kota
+Value=4;Minyak tanah
+Value=5;Arang
+Value=6;Briket
+Value=8;Lainnya
+Value=9;Tidak pernah memasak
+Value=7;Kayu
+
+[Record]
+Label=PERLINDUNGAN SOSIAL
+Name=SEC14
+RecordTypeValue='D'
+RecordLen=72
+
+[Item]
+Label=Apakah rumah tangga ini pernah menerima/membeli beras miskin (raskin)?
+Name=B7R1A
+Start=20
+Len=1
+
+[Item]
+Label=Apa alasannya?
+Name=B7R1C
+Start=21
+Len=2
+
+[ValueSet]
+Label=Apa alasannya?
+Name=B7R1C_VS1
+Value=2;Beli seperlunya
+Value=1;Tidak punya uang
+Value=4;Ketentuan Musdes/Musdus
+Value=8;Lainnya
+
+[Item]
+Label=Apakah rumah tangga Anda pernah menjadi penerima Program Keluarga Harapan (PKH)?
+Name=B7R2A
+Start=23
+Len=1
+
+[Item]
+Label=Apakah rumah tangga Anda memiliki kartu PKH?
+Name=B7R2B
+Start=24
+Len=1
+
+[ValueSet]
+Label=Apakah rumah tangga Anda memiliki kartu PKH?
+Name=B7R2B_VS1
+Value=1;Ada, dapat ditunjukkan
+Value=2;Ada, tidak dapat ditunjukkan
+Value=3;Tidak ada
+
+[Item]
+Label=Apakah saat ini rumah tangga Anda masih tercatat/menjadi penerima PKH?
+Name=B7R2C
+Start=25
+Len=1
+
+[ValueSet]
+Label=Apakah saat ini rumah tangga Anda masih tercatat/menjadi penerima PKH?
+Name=B7R2C_VS1
+Value=1;Ya
+Value=2;Tidak
+Value=3;Tidak tahu
+
+[Item]
+Label=Apakah rumah tangga ini memiliki barang-barang sebagai berikut:
+Name=B7R3
+Start=26
+Len=10
+
+[Item]
+Label=Sepeda
+Name=B7R3A
+Start=26
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Sepeda motor
+Name=B7R3B
+Start=27
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Perahu
+Name=B7R3C
+Start=28
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=TV kabel
+Name=B7R3D
+Start=29
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=AC
+Name=B7R3E
+Start=30
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=SPemanas air (water heater)
+Name=B7R3F
+Start=31
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Tabung gas 12 kg atau lebih
+Name=B7R3G
+Start=32
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lemari es/kulkas
+Name=B7R3H
+Start=33
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Perahu motor
+Name=B7R3I
+Start=34
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Mobil
+Name=B7R3J
+Start=35
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Dalam sebulan terakhir, apakah penghasilan Dalam sebulan terakhir, apakah penghasilan sehari-hari?
+Name=B7R4A
+Start=36
+Len=1
+
+[Item]
+Label=Dari mana rumah tangga ini memenuhi kekurangannya?
+Name=B7R4B
+Start=37
+Len=9
+
+[Item]
+Label=Menggunakan uang simpanan (di bank/rumah)
+Name=B7R4BA
+Start=37
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Menjual barang milik sendiri
+Name=B7R4BB
+Start=38
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Meminjam dari saudara/famili
+Name=B7R4BC
+Start=39
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Meminjam dari teman, tetangga
+Name=B7R4BD
+Start=40
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Meminjam dari tukang kredit
+Name=B7R4BE
+Start=41
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Meminjam tunai dari bank
+Name=B7R4BF
+Start=42
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Meminjam dari koperasi
+Name=B7R4BG
+Start=43
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Menggadaikan barang
+Name=B7R4BH
+Start=44
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lainnya [Tuliskan]
+Name=B7R4BI
+Start=45
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah ada anggota rumah tangga yang menerima kredit usaha dalam setahun terakhir?
+Name=B7R5
+Start=46
+Len=7
+
+[Item]
+Label=Program Nasional Pemberdayaan Masyarakat (PNPM)
+Name=B7R5A
+Start=46
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Program pemerintah selain PNPM
+Name=B7R5B
+Start=47
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Kredit Usaha Rakyat (KUR)
+Name=B7R5C
+Start=48
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Program bank selain KUR
+Name=B7R5D
+Start=49
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Program koperasi
+Name=B7R5E
+Start=50
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Perorangan
+Name=B7R5F
+Start=51
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Lainnya [Tuliskan]
+Name=B7R5G
+Start=52
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah ada anggota rumah tangga yang menerima beasiswa dalam setahun terakhir?
+Name=B7R6
+Start=53
+Len=9
+
+[Item]
+Label=Bantuan Siswa Miskin (BSM) SD/sederajat
+Name=B7R6A
+Start=53
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Bantuan Siswa Miskin (BSM) SMP/sederajat
+Name=B7R6B
+Start=54
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Bantuan Siswa Miskin (BSM) SMA/sederajat
+Name=B7R6C
+Start=55
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Bantuan Siswa Miskin (BSM) PT/sederajat
+Name=B7R6D
+Start=56
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Beasiswa selain BSM dari pemerintah
+Name=B7R6E
+Start=57
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Beasiswa dari lembaga non pemerintah
+Name=B7R6F
+Start=58
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Beasiswa/Bantuan dari luar negeri
+Name=B7R6G
+Start=59
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Beasiswa/Bantuan dari perseorangan
+Name=B7R6H
+Start=60
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Beasiswa/Bantuan dari sekolah
+Name=B7R6I
+Start=61
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Apakah ada anggota rumah tangga yang menerima jaminan sosial dalam setahun terakhir?
+Name=B7R7
+Start=62
+Len=5
+
+[Item]
+Label=Jaminan pensiun
+Name=B7R7A
+Start=62
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Jaminan hari tua
+Name=B7R7B
+Start=63
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Asuransi Kecelakaan kerja
+Name=B7R7C
+Start=64
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Jaminan veteran
+Name=B7R7D
+Start=65
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Pesangon pemutusan hubungan kerja (PHK)
+Name=B7R7E
+Start=66
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=pembiayaan/asuransi kesehatan dalam setahun terakhir?
+Name=B7R8
+Start=67
+Len=6
+
+[Item]
+Label=Jamkesmas
+Name=B7R8A
+Start=67
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Jamkesda
+Name=B7R8B
+Start=68
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Jaminan persalinan (Jampersal)
+Name=B7R8C
+Start=69
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=JPK PNS/Veteran/Pensiun
+Name=B7R8D
+Start=70
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=JPK Jamsostek
+Name=B7R8E
+Start=71
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Jaminan kesehatan lainnya
+Name=B7R8F
+Start=72
+Len=1
+ItemType=SubItem
+
+[Record]
+Label=TEKNOLOGI KOMUNIKASI DAN INFORMASI
+Name=SEC15
+RecordTypeValue='E'
+RecordLen=27
+
+[Item]
+Label=Apakah di rumah tangga ini ada telepon rumah?
+Name=B8R1
+Start=20
+Len=1
+
+[Item]
+Label=Apakah ada anggota rumah tangga yang menguasai telepon seluler (HP)?
+Name=B8R2A
+Start=21
+Len=1
+
+[Item]
+Label=Banyaknya anggota rumah tangga yang menguasai nomor HP yang aktif:
+Name=B8R2B
+Start=22
+Len=2
+
+[Item]
+Label=Jumlah nomor HP aktif yang dikuasai seluruh anggota rumah tangga :
+Name=B8R2C
+Start=24
+Len=2
+
+[Item]
+Label=Apakah di rumah tangga ini ada komputer?
+Name=B8R3
+Start=26
+Len=2
+
+[Item]
+Label=Desktop/Personal Computer (PC)
+Name=B8R3A
+Start=26
+Len=1
+ItemType=SubItem
+
+[Item]
+Label=Laptop/Notebook
+Name=B8R3B
+Start=27
+Len=1
+ItemType=SubItem
+
+[Record]
+Label=SUMBER PENGHASILAN RUMAH TANGGA
+Name=SEC16
+RecordTypeValue='F'
+RecordLen=22
+
+[Item]
+Label=Sumber penghasilan terbesar rumah tangga (pilih dari anggota ruta dengan penghasilan terbesar):
+Name=B9R1
+Start=20
+Len=3
+
+[Item]
+Label=Lapangan Usaha (Tulis selengkap-lengkapnya)
+Name=B9R1A
+Start=20
+Len=2
+ItemType=SubItem
+
+[Item]
+Label=Status Pekerjaan:
+Name=B9R1B
+Start=22
+Len=1
+ItemType=SubItem
+
+[ValueSet]
+Label=Status Pekerjaan:
+Name=B9R1B_VS1
+Value=0;Penerima pendapatan
+Value=1;Buruh/karyawan
+Value=2;Pengusaha
+
+[Record]
+Label=CATATAN
+Name=SEC17
+RecordTypeValue='G'
+RecordLen=19

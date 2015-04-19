@@ -1,0 +1,15 @@
+﻿[CSPro Application]
+Version=CSPro 6.0
+Label=KOR2013
+Name=KOR2013
+AppType=DataEntry
+[AppCode]
+File=08/04/2015 13:47:42,.\kor2013.ent.app
+[Message]
+File=08/04/2015 13:47:42,.\kor2013.ent.mgf
+[Help]
+File=08/04/2015 13:47:42,.\kor2013.ent.qsf
+[Forms]
+File=09/04/2015 23:15:03,.\kor2013.fmf
+[Dictionary Types]
+Dict-Type=.\kor2013.dcf,Input,.\kor2013.fmf
